@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Porkies Cafe — Menu, Burgers, Brekkie & More</title>
+  <meta name="description" content="The Porkies Cafe full menu: signature burgers including Tower of Power, Miss Piggy and the Cowboy. Brekkie rolls, loaded fries, small bites. 448 Pacific Highway, Crows Nest NSW." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span> PORKIES</a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navList').classList.toggle('open')">☰</button>
+      <ul id="navList">
+        <li><a class="link" href="index.html">Home</a></li>
+        <li><a class="link active" href="cafe.html">The Cafe</a></li>
+        <li><a class="link" href="catering.html">Catering</a></li>
+        <li><a class="link" href="#menu">Menu</a></li>
+        <li><a class="link" href="#visit">Visit</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="wrap">
+      <span class="handwritten">Our home base</span>
+      <h1>The Porkies Cafe</h1>
+      <p>The truck grew up and got a roof. Same cooking, same crew, same honest prices — just with proper tables, cold drinks from the fridge, and a bit of shade when summer's doing its thing.</p>
+      <a href="#menu" class="btn btn-primary">See the Menu</a>
+      <a href="#visit" class="btn btn-ghost">How to Find Us</a>
+    </div>
+  </header>
+
+  <!-- SIGNATURE TRIO -->
+  <section id="signatures">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">The heavy hitters</span>
+        <h2>The Three Porkies Legends</h2>
+        <p>Every regular has their favourite, but these are the three we're known for. If it's your first time, start here.</p>
+      </div>
+
+      <div class="signature-grid">
+        <article class="sig-card">
+          <div class="img-wrap">
+            <span class="flag">Signature</span>
+            <img src="images/towerOfPower.jpeg" alt="Tower of Power — stacked fried chicken burger"/>
+          </div>
+          <div class="body">
+            <h3>Tower of Power</h3>
+            <p class="ingredients">Southern fried chicken, cheese, bacon, hashbrown, lettuce, chilli mayo. A wall of flavour.</p>
+            <div class="price">$26</div>
+          </div>
+        </article>
+
+        <article class="sig-card">
+          <div class="img-wrap">
+            <span class="flag">Signature</span>
+            <img src="images/misspiggy.jpeg" alt="Miss Piggy — glazed pork belly burger"/>
+          </div>
+          <div class="body">
+            <h3>Miss Piggy</h3>
+            <p class="ingredients">Glazed pork belly, slaw, pickle, onion, peri-peri sauce. Our pork belly, at its best.</p>
+            <div class="price">$23</div>
+          </div>
+        </article>
+
+        <article class="sig-card">
+          <div class="img-wrap">
+            <span class="flag">Signature</span>
+            <img src="images/cowboyburger.jpeg" alt="Cowboy burger — wagyu with onion rings"/>
+          </div>
+          <div class="body">
+            <h3>Cowboy</h3>
+            <p class="ingredients">Wagyu beef patty, onion rings, pickles, lettuce, American cheese, smokey BBQ. A proper bloke's burger.</p>
+            <div class="price">$25</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL MENU -->
+  <section id="menu" style="background:#0c0a0b;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">The whole menu</span>
+        <h2>Breakfast, Burgers &amp; Bites</h2>
+        <p>Cooked to order. Wagyu beef, southern fried chicken, slow-roasted pork belly. Proper ingredients, fair prices.</p>
+      </div>
+
+      <!-- BREAKFAST (no image) -->
+      <div class="menu-section single">
+        <div>
+          <div class="ms-head">
+            <h2>Breakfast</h2>
+            <span class="handwritten">early birds</span>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Porkie's Big Brekkie Burger</div>
+                <p class="desc">Bacon, 100% wagyu beef patty, cheese, fried egg, hashbrown. All of it. Yes, all of it.</p>
+              </div>
+              <div class="price">$24</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Big Breaky Burger</div>
+                <p class="desc">Double bacon, egg, hashbrown, cheese. The sort of thing that fixes a rough morning.</p>
+              </div>
+              <div class="price">$19</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Bacon + Egg Roll</div>
+                <p class="desc">1 egg, full rasher of bacon, soft milk bun, your choice of sauce.</p>
+              </div>
+              <div class="price">$9</div>
+            </div>
+          </div>
+          <p class="menu-note">Brekkie served Saturday &amp; Sunday, 8–11am.</p>
+        </div>
+      </div>
+
+      <!-- BURGERS -->
+      <div class="menu-section reversed">
+        <div>
+          <div class="ms-head">
+            <h2>Burgers</h2>
+            <span class="handwritten">the main event</span>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Buffalo Babe</div>
+                <p class="desc">Southern fried chicken, bacon, coleslaw, blue cheese ranch, American cheese, jalapeño, hot sauce.</p>
+              </div>
+              <div class="price">$28</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Grilled Chicken</div>
+                <p class="desc">Grilled chicken breast, coleslaw, bacon, cheese, special sauce. The lighter option — still a feed.</p>
+              </div>
+              <div class="price">$28</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Barnyard</div>
+                <p class="desc">Wagyu, bacon, southern fried chicken, American cheese, lettuce, pickles, onion, special sauce.</p>
+              </div>
+              <div class="price">$27</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Pulled Beef</div>
+                <p class="desc">Pulled beef, slaw, pickle, onion, BBQ sauce.</p>
+              </div>
+              <div class="price">$26</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">The Mozz</div>
+                <p class="desc">Wagyu, bacon, mozzarella sticks, American cheese, lettuce, pickles, onion, mustard, ketchup.</p>
+              </div>
+              <div class="price">$26</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Hot Honey</div>
+                <p class="desc">Fried chicken, bacon, cheddar, lettuce, jalapeño, special sauce, hot honey.</p>
+              </div>
+              <div class="price">$25</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Mr Meaty</div>
+                <p class="desc">100% wagyu beef patty, pulled pork, American cheese, pickle, onion, special sauce.</p>
+              </div>
+              <div class="price">$25</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Pulled Pork</div>
+                <p class="desc">Pulled pork, slaw, pickle, onion, BBQ sauce.</p>
+              </div>
+              <div class="price">$24</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Cluckin Mad</div>
+                <p class="desc">Southern fried chicken, bacon, coleslaw, American cheese, special sauce.</p>
+              </div>
+              <div class="price">$23</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Americana</div>
+                <p class="desc">100% wagyu beef patty, American cheese, pickle, onion, special sauce. Clean and classic.</p>
+              </div>
+              <div class="price">$21</div>
+            </div>
+          </div>
+          <p class="menu-note">Gluten-free buns and dairy-free cheese available on request — just ask.</p>
+        </div>
+        <div class="ms-hero">
+          <img src="images/otherburgerrange.jpeg" alt="A range of Porkies burgers on the counter"/>
+        </div>
+      </div>
+
+      <!-- LOADED FRIES -->
+      <div class="menu-section">
+        <div class="ms-hero">
+          <img src="images/loadedfriesrange.jpeg" alt="A range of Porkies loaded fries"/>
+        </div>
+        <div>
+          <div class="ms-head">
+            <h2>Loaded Fries</h2>
+            <span class="handwritten">sharing? optional.</span>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Pulled Beef</div>
+                <p class="desc">Pulled beef, Mexican cheese, spring onion, BBQ sauce.</p>
+              </div>
+              <div class="price">$25</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Pork Belly</div>
+                <p class="desc">Pork belly bites in glaze, Mexican cheese, spring onion, peri-peri or chipotle.</p>
+              </div>
+              <div class="price">$22</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Pulled Pork</div>
+                <p class="desc">Pulled pork, Mexican cheese, spring onion, BBQ sauce.</p>
+              </div>
+              <div class="price">$22</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Popcorn Chicken</div>
+                <p class="desc">Popcorn chicken, Mexican cheese, spring onion, BBQ sauce &amp; special sauce.</p>
+              </div>
+              <div class="price">$22</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Cheesy</div>
+                <p class="desc">Bacon bits, Mexican cheese, spring onion, special sauce.</p>
+              </div>
+              <div class="price">$18</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SMALL BITES -->
+      <div class="menu-section reversed">
+        <div>
+          <div class="ms-head">
+            <h2>Small Bites &amp; Sides</h2>
+            <span class="handwritten">for the kids &amp; the nibblers</span>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Kids Cheeseburger &amp; Chips</div>
+                <p class="desc">Single smash, cheese, ketchup, small chips.</p>
+              </div>
+              <div class="price">$19</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Pork Belly Bites</div>
+                <p class="desc">Little chunks of our famous pork belly, glazed and golden.</p>
+              </div>
+              <div class="price">$15</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Popcorn Chicken &amp; Fries</div>
+                <p class="desc">Five pieces plus a serve of chips.</p>
+              </div>
+              <div class="price">$14</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Kids Nuggets &amp; Chips</div>
+                <p class="desc">Five nuggets, small chips. Ketchup on the side.</p>
+              </div>
+              <div class="price">$13</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Mozzarella Sticks &amp; Fries</div>
+                <p class="desc">Five sticks plus a generous chip serve.</p>
+              </div>
+              <div class="price">$13</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Mozzarella Sticks</div>
+                <p class="desc">Golden, gooey, five to a serve.</p>
+              </div>
+              <div class="price">5 for $10</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Popcorn Chicken</div>
+                <p class="desc">Seasoned, crispy, cup-sized.</p>
+              </div>
+              <div class="price">$10</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">French Fries</div>
+                <p class="desc">Proper thick-cut, sea salted, a bit of crunch.</p>
+              </div>
+              <div class="price">$10</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Soft Drinks</div>
+                <p class="desc">Coke range, lemonade, bottled water.</p>
+              </div>
+              <div class="price">$4</div>
+            </div>
+          </div>
+        </div>
+        <div class="ms-hero">
+          <img src="images/smallbitesrange.jpeg" alt="Small bites — mozzarella sticks, nuggets, pork belly bites"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAFE STORY -->
+  <section>
+    <div class="wrap cafe-hero-grid">
+      <div>
+        <span class="handwritten" style="font-size:1.6rem;">Come on in</span>
+        <h2>A little local,<br/>a lot of heart.</h2>
+        <p>We set up the cafe the way we wished every corner feed joint was: honest menu, warm welcome, a counter you can chat over, and a kitchen where you can see Rob working the grill. No TV playing the news. No stiff hostess stand. Just a place to eat a good burger with people you like.</p>
+        <p>Pop in for a feed. Stay for a yarn. If it's your first time, tell us — first-timers get a house thickshake on Rob.</p>
+      </div>
+
+      <div class="cafe-info-box">
+        <h3>Opening Hours</h3>
+        <ul class="hours">
+          <li><strong>Monday</strong><span>Closed — gone fishing</span></li>
+          <li><strong>Tuesday</strong><span>Truck day (see home)</span></li>
+          <li><strong>Wednesday</strong><span>11am – 8pm</span></li>
+          <li><strong>Thursday</strong><span>11am – 8pm</span></li>
+          <li><strong>Friday</strong><span>11am – 9pm</span></li>
+          <li><strong>Saturday</strong><span>8am – 9pm</span></li>
+          <li><strong>Sunday</strong><span>8am – 4pm</span></li>
+        </ul>
+        <p style="margin-top:16px;color:#555;font-size:.9rem;">Hours can shift if the truck's out at a private job — we always post updates on the socials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section style="background:#0c0a0b;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">Why dine in</span>
+        <h2>Little things that make it feel like home</h2>
+      </div>
+      <div class="feature-list">
+        <div class="feature">
+          <div class="ico">🪑</div>
+          <h4>Proper Seating</h4>
+          <p>Indoor booths, outdoor bench tables, high stools at the counter. Plenty of room for a crew.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">🌿</div>
+          <h4>Shaded Deck</h4>
+          <p>Out the back, under the gum — the best spot on a hot arvo. Pull up a seat and sink a cold one.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">🍳</div>
+          <h4>Weekend Brekkie</h4>
+          <p>Sat &amp; Sun 8–11am. Bacon &amp; egg rolls, the Big Brekkie Burger, old-fashioned filter coffee.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">🧃</div>
+          <h4>Local Drinks</h4>
+          <p>Craft sodas from up the road, local ginger beer, cold cordial for the kids. No multinationals.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">👨‍🍳</div>
+          <h4>Open Kitchen</h4>
+          <p>Watch Rob work the grill from your seat. Kids love it. So do food people.</p>
+        </div>
+        <div class="feature">
+          <div class="ico">🅿️</div>
+          <h4>Easy Parking</h4>
+          <p>Free off-street parking, two-minute walk from the bus stop. Trams stop right out front.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">Drop in</span>
+        <h2>Find the Cafe</h2>
+        <p>No bookings needed — we're a casual spot. Big groups (10+), give us a bell so we can save you a table.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="info-card">
+          <h3>Address</h3>
+          <p style="color:#fff;font-size:1.3rem;font-family:'Bebas Neue',Impact,sans-serif;letter-spacing:2px;">448 Pacific Highway,<br/>Crows Nest NSW 2065</p>
+          <p style="color:#ccc;">We're the joint with the pink neon pig in the window — can't miss it.</p>
+          <p style="color:#ccc;">📞 <strong style="color:#fff;">0414 739 696</strong><br/>
+          📷 <a href="https://instagram.com/porkiescrowsnest" target="_blank" rel="noopener"><strong style="color:#fff;">@porkiescrowsnest</strong></a></p>
+          <a href="https://maps.google.com/?q=448+Pacific+Highway+Crows+Nest+NSW+2065" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:10px;">Open in Google Maps</a>
+        </div>
+
+        <div class="info-card" style="padding:0;overflow:hidden;">
+          <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;background:#1a1517;">
+            <rect width="500" height="400" fill="#1a1517"/>
+            <path d="M0 180 L500 200" stroke="#2b2427" stroke-width="40"/>
+            <path d="M260 0 L240 400" stroke="#2b2427" stroke-width="40"/>
+            <path d="M0 320 L500 320" stroke="#2b2427" stroke-width="20"/>
+            <path d="M120 0 L100 400" stroke="#2b2427" stroke-width="20"/>
+            <rect x="320" y="40" width="150" height="120" rx="12" fill="#223225"/>
+            <circle cx="360" cy="90" r="14" fill="#3a5a3c"/>
+            <circle cx="410" cy="120" r="18" fill="#3a5a3c"/>
+            <text x="345" y="105" font-family="Manrope" font-size="12" fill="#7a9c7c">RIVERSIDE PK</text>
+            <text x="10" y="175" font-family="Manrope" font-size="11" fill="#5e5458">PACIFIC HWY</text>
+            <text x="260" y="20" font-family="Manrope" font-size="11" fill="#5e5458" transform="rotate(90 260 20)">WILLOUGHBY RD</text>
+            <circle cx="250" cy="195" r="28" fill="#ff2d87" opacity=".25"/>
+            <circle cx="250" cy="195" r="16" fill="#ff2d87"/>
+            <path d="M250 180 L250 220" stroke="#fff" stroke-width="2"/>
+            <text x="250" y="198" font-family="Bebas Neue" font-size="14" fill="#fff" text-anchor="middle">P</text>
+            <text x="250" y="250" font-family="Bebas Neue" font-size="18" fill="#ff5aa1" text-anchor="middle" letter-spacing="2">PORKIES CAFE</text>
+            <text x="250" y="270" font-family="Manrope" font-size="10" fill="#aaa" text-anchor="middle">448 Pacific Hwy, Crows Nest</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap" style="max-width:900px;">
+      <div class="section-head">
+        <span class="handwritten">Good to know</span>
+        <h2>Quick Questions</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Do you take bookings?</summary>
+          <p>For groups under 10, just pop in. For 10 or more, give us a call a day or two ahead so we can save you the back deck.</p>
+        </details>
+        <details>
+          <summary>When's the full menu available?</summary>
+          <p>Lunch menu kicks off at 11am every day we're open. Brekkie runs Sat &amp; Sun 8–11am. After 11am on weekends the full menu's on.</p>
+        </details>
+        <details>
+          <summary>Dietary options?</summary>
+          <p>GF buns and dairy-free cheese on request ($2 swap). Vegetarian options available — chat to Rob if you've got allergies, he'll sort you.</p>
+        </details>
+        <details>
+          <summary>Where are you, exactly?</summary>
+          <p>448 Pacific Highway, Crows Nest NSW 2065. Look for the pink neon pig in the window — you'll know you're in the right spot.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="wrap">
+    <div class="cta-banner">
+      <h2>See you at the Cafe.</h2>
+      <p>No fuss, no reservations (unless you're rolling deep), no attitude. Just a good feed and a good yarn.</p>
+      <a href="catering.html" class="btn btn-ghost">Need Catering?</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="brand" style="margin-bottom:14px;"><span class="dot"></span> PORKIES</div>
+          <p>Family-owned Aussie food truck and cafe. Honest feeds, proper cooking, fair prices.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="cafe.html">The Cafe</a></li>
+            <li><a href="index.html#find">Truck Schedule</a></li>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Book Us</h4>
+          <ul>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="tel:0414739696">Ring Rob</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Say Hi</h4>
+          <ul>
+            <li>📞 0414 739 696</li>
+            <li>📍 448 Pacific Hwy, Crows Nest NSW 2065</li>
+            <li>📷 <a href="https://instagram.com/porkiescrowsnest" target="_blank" rel="noopener">@porkiescrowsnest</a></li>
+            <li>📷 <a href="https://instagram.com/porkiesmobilecatering" target="_blank" rel="noopener">@porkiesmobilecatering</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Porkies. All rights reserved.</span>
+        <span class="handwritten">Made for battlers, by battlers.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
