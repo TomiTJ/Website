@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porkies — Honest Aussie Burgers & Pork Bellies Done Right</title>
+  <meta name="description" content="Porkies is a family-run Aussie food truck serving smash burgers, crispy chips, and knockout specials like maple glazed pork belly. Catering and dine-in available." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span> PORKIES</a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navList').classList.toggle('open')">☰</button>
+      <ul id="navList">
+        <li><a class="link active" href="index.html">Home</a></li>
+        <li><a class="link" href="cafe.html">The Cafe</a></li>
+        <li><a class="link" href="catering.html">Catering</a></li>
+        <li><a class="link" href="#menu">Menu</a></li>
+        <li><a class="link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-tag">Aussie Owned • Truck & Cafe</span>
+        <h1>Honest feeds,<br/>heart of a<br/><span>battler.</span></h1>
+        <p class="lead">Smash burgers, crispy chips, and the maple glazed pork belly that put us on the map. Cooked fresh from the truck — the old-fashioned way, with no fuss and plenty of flavour.</p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">See the Menu</a>
+          <a href="catering.html" class="btn btn-ghost">Book Catering</a>
+        </div>
+        <p class="handwritten" style="margin-top:26px;font-size:1.4rem;">— Pull up a stool, mate. —</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="badge">
+          <div class="badge-inner">
+            <!-- Burger SVG -->
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-label="Burger">
+              <!-- top bun -->
+              <path d="M20 90 Q100 10 180 90 Z" fill="#d97e3b"/>
+              <ellipse cx="70" cy="55" rx="4" ry="2.5" fill="#fff2cf"/>
+              <ellipse cx="110" cy="45" rx="4" ry="2.5" fill="#fff2cf"/>
+              <ellipse cx="140" cy="60" rx="4" ry="2.5" fill="#fff2cf"/>
+              <ellipse cx="90" cy="70" rx="4" ry="2.5" fill="#fff2cf"/>
+              <!-- lettuce -->
+              <path d="M15 95 Q25 80 40 95 Q55 80 70 95 Q85 80 100 95 Q115 80 130 95 Q145 80 160 95 Q175 80 185 95 L185 105 L15 105 Z" fill="#7fb86a"/>
+              <!-- cheese -->
+              <path d="M18 108 L182 108 L195 120 L12 120 Z" fill="#ffb347"/>
+              <!-- patty -->
+              <rect x="20" y="118" width="160" height="20" rx="8" fill="#4a2418"/>
+              <!-- pink glaze drip (Porkies touch) -->
+              <path d="M30 138 Q50 150 70 138 Q90 152 110 138 Q130 150 150 138 Q170 150 180 138 L180 148 L30 148 Z" fill="#ff2d87"/>
+              <!-- bottom bun -->
+              <path d="M20 148 Q100 200 180 148 Z" fill="#d97e3b"/>
+            </svg>
+          </div>
+        </div>
+        <div class="stamp">FAMILY<br/>OWNED<br/>EST. 2019</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT / STORY -->
+  <section class="about">
+    <div class="wrap about-grid">
+      <div>
+        <span class="handwritten" style="font-size:1.6rem;">Our story</span>
+        <h2>One bloke, one grill,<br/>and a whole lotta love.</h2>
+        <p>Porkies started with a second-hand trailer, a borrowed cast iron, and the stubborn Aussie belief that a burger should taste like someone actually gave a damn. No frills, no gimmicks — just honest tucker cooked by a bloke who's been up since four-thirty seasoning the grill.</p>
+        <p>We know every supplier by first name. We know regulars by their order. And if we're out of the maple glazed pork belly by two o'clock, we're sorry — it means the folks before you had very good taste.</p>
+        <p class="about-signature">— Rob, owner</p>
+        <div class="about-stats">
+          <div class="stat"><strong>7 yrs</strong><span>On the road</span></div>
+          <div class="stat"><strong>100%</strong><span>Aussie beef</span></div>
+          <div class="stat"><strong>1</strong><span>Bloke doing it all</span></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <h2>Why Porkies?</h2>
+        <p>Because fast food shouldn't feel fast — it should feel like a mate handing you something mighty good over the counter.</p>
+        <p>We make everything in small batches. Sauces from scratch. Chips hand-cut the night before. Buns baked a suburb over. The pork belly? Brined overnight, slow roasted, then finished on the flat-top with maple and a cheeky crack of pepper.</p>
+        <p>We think you can taste the difference. Most folks tell us we're right.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNATURE TRIO -->
+  <section id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">What's cookin'</span>
+        <h2>The Three Porkies Legends</h2>
+        <p>Every regular has their favourite. These are the three that put us on the map — start here if it's your first time.</p>
+      </div>
+
+      <div class="signature-grid">
+        <article class="sig-card">
+          <div class="img-wrap">
+            <span class="flag">Signature</span>
+            <img src="images/towerOfPower.jpeg" alt="Tower of Power — stacked fried chicken burger"/>
+          </div>
+          <div class="body">
+            <h3>Tower of Power</h3>
+            <p class="ingredients">Southern fried chicken, cheese, bacon, hashbrown, lettuce, chilli mayo.</p>
+            <div class="price">$26</div>
+          </div>
+        </article>
+
+        <article class="sig-card">
+          <div class="img-wrap">
+            <span class="flag">Signature</span>
+            <img src="images/misspiggy.jpeg" alt="Miss Piggy — glazed pork belly burger"/>
+          </div>
+          <div class="body">
+            <h3>Miss Piggy</h3>
+            <p class="ingredients">Glazed pork belly, slaw, pickle, onion, peri-peri sauce.</p>
+            <div class="price">$23</div>
+          </div>
+        </article>
+
+        <article class="sig-card">
+          <div class="img-wrap">
+            <span class="flag">Signature</span>
+            <img src="images/cowboyburger.jpeg" alt="Cowboy burger — wagyu with onion rings"/>
+          </div>
+          <div class="body">
+            <h3>Cowboy</h3>
+            <p class="ingredients">Wagyu beef, onion rings, pickles, lettuce, American cheese, smokey BBQ.</p>
+            <div class="price">$25</div>
+          </div>
+        </article>
+      </div>
+
+      <p style="text-align:center;margin-top:40px;color:#c7bfb7;font-size:1.1rem;">
+        Plus brekkie burgers, loaded fries, small bites &amp; more —<br/>
+        <a href="cafe.html#menu" class="btn btn-primary" style="margin-top:18px;">See the Full Menu</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- PERKS -->
+  <section class="perks">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">The Porkies promise</span>
+        <h2>What you get with every order</h2>
+      </div>
+      <div class="perks-grid">
+        <div class="perk">
+          <div class="ico">🔥</div>
+          <h3>Cooked to Order</h3>
+          <p>Nothing under a heat lamp. If you waited five minutes, it's because it's being made for you.</p>
+        </div>
+        <div class="perk">
+          <div class="ico">🇦🇺</div>
+          <h3>Aussie Suppliers</h3>
+          <p>Local butcher. Local baker. Local farmers. We keep the money in the neighbourhood.</p>
+        </div>
+        <div class="perk">
+          <div class="ico">💸</div>
+          <h3>Fair Dinkum Prices</h3>
+          <p>No tricks, no "market price", no rubbish. What's on the sign is what you pay.</p>
+        </div>
+        <div class="perk">
+          <div class="ico">❤️</div>
+          <h3>Made with Love</h3>
+          <p>Sounds soft, but it's true. One bloke, one grill, and he means it every time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="wrap">
+    <div class="cta-banner">
+      <h2>Got a crowd to feed?</h2>
+      <p>Weddings, tradie lunches, birthdays, engagement parties, wakes, whatever. We roll up, set up, cook on-site, and leave everyone sorted. No stress.</p>
+      <a href="catering.html" class="btn btn-ghost">See Catering Options</a>
+    </div>
+  </div>
+
+  <!-- LOCATION -->
+  <section id="find" style="padding-top:40px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">Come say g'day</span>
+        <h2>Find Us This Week</h2>
+        <p>Follow along on the socials for daily updates — sometimes we move for a private job.</p>
+      </div>
+      <div class="location-grid">
+        <div class="info-card">
+          <h3>The Truck — This Week</h3>
+          <ul class="hours">
+            <li><strong>Mon</strong><span>Day off — gone fishing</span></li>
+            <li><strong>Tue</strong><span>Bayside Markets · 11am–3pm</span></li>
+            <li><strong>Wed</strong><span>Riverside Park · 11am–8pm</span></li>
+            <li><strong>Thu</strong><span>Tradie Lunch Run · 11am–2pm</span></li>
+            <li><strong>Fri</strong><span>Night Market · 5pm–10pm</span></li>
+            <li><strong>Sat</strong><span>The Cafe · 10am–9pm</span></li>
+            <li><strong>Sun</strong><span>The Cafe · 10am–4pm</span></li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>The Porkies Cafe</h3>
+          <p>Our permanent spot. Same menu, four walls, proper seats, and a bit of shade when the sun's biting.</p>
+          <p><strong style="color:#fff;">448 Pacific Highway,</strong><br/>Crows Nest NSW 2065</p>
+          <a href="cafe.html" class="btn btn-primary" style="margin-top:10px;">Visit Cafe Page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section style="background:#0c0a0b;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">The regulars reckon</span>
+        <h2>Word on the street</h2>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <p>"That pork belly ought to be illegal. Took three of us and we still wanted more. Rob's a legend."</p>
+          <div class="who">— Sharon, Thursday regular</div>
+        </div>
+        <div class="quote">
+          <p>"Catered our engagement. 80 people, no drama, everyone raving about the burgers a fortnight later."</p>
+          <div class="who">— Mitch & Tahlia</div>
+        </div>
+        <div class="quote">
+          <p>"I drive past two other burger joints to get to Porkies. That's all you need to know."</p>
+          <div class="who">— Kev, tradie</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot" id="contact">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="brand" style="margin-bottom:14px;"><span class="dot"></span> PORKIES</div>
+          <p>Family-owned Aussie food truck and cafe. Honest feeds, proper cooking, fair prices. Since 2019.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="cafe.html">The Cafe</a></li>
+            <li><a href="#find">Truck Schedule</a></li>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Book Us</h4>
+          <ul>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="tel:0414739696">Ring Rob</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Say Hi</h4>
+          <ul>
+            <li>📞 0414 739 696</li>
+            <li>📍 448 Pacific Hwy, Crows Nest NSW 2065</li>
+            <li>📷 <a href="https://instagram.com/porkiescrowsnest" target="_blank" rel="noopener">@porkiescrowsnest</a></li>
+            <li>📷 <a href="https://instagram.com/porkiesmobilecatering" target="_blank" rel="noopener">@porkiesmobilecatering</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Porkies. All rights reserved. Cooked with love.</span>
+        <span class="handwritten">Made for battlers, by battlers.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
