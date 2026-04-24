@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porkies Catering — Weddings, Parties, Corporate Feeds</title>
+  <meta name="description" content="Porkies brings the truck to you. Smash burgers, pulled pork, loaded fries, desserts. Minimum 50 guests. Ring Rob on 0414 739 696." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Reusable SVG icons -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <symbol id="icon-burger" viewBox="0 0 64 64">
+      <path fill="currentColor" d="M32 8c-12 0-22 6-22 13 0 1 1 2 2 2h40c1 0 2-1 2-2 0-7-10-13-22-13z"/>
+      <rect x="8" y="26" width="48" height="5" rx="2.5" fill="currentColor"/>
+      <path fill="currentColor" d="M10 34h44c1.5 0 2 1 1 2l-3 4c-1 1-2 1-3 0l-2-2c-1-1-2-1-3 0l-2 2c-1 1-2 1-3 0l-2-2c-1-1-2-1-3 0l-2 2c-1 1-2 1-3 0l-2-2c-1-1-2-1-3 0l-2 2c-1 1-2 1-3 0l-3-4c-1-1 0-2 1-2z"/>
+      <path fill="currentColor" d="M12 46h40c2 0 4 2 4 4v2c0 4-3 6-6 6H14c-3 0-6-2-6-6v-2c0-2 2-4 4-4z"/>
+      <circle cx="20" cy="16" r="1.5" fill="#fff" opacity=".5"/>
+      <circle cx="30" cy="14" r="1.5" fill="#fff" opacity=".5"/>
+      <circle cx="40" cy="16" r="1.5" fill="#fff" opacity=".5"/>
+    </symbol>
+    <symbol id="icon-fries" viewBox="0 0 64 64">
+      <path fill="currentColor" d="M16 32h32l-3 22c-.3 2.3-2.3 4-4.6 4H23.6c-2.3 0-4.3-1.7-4.6-4L16 32z"/>
+      <rect x="20" y="10" width="5" height="26" rx="1.5" fill="currentColor" opacity=".85"/>
+      <rect x="27" y="6" width="5" height="30" rx="1.5" fill="currentColor"/>
+      <rect x="34" y="9" width="5" height="27" rx="1.5" fill="currentColor" opacity=".9"/>
+      <rect x="41" y="12" width="5" height="24" rx="1.5" fill="currentColor" opacity=".8"/>
+      <rect x="14" y="30" width="36" height="6" rx="1" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-chicken" viewBox="0 0 64 64">
+      <path fill="currentColor" d="M32 8c-10 0-18 8-18 18 0 5 2 9 5 12l-3 5c-1 2 0 4 2 4h28c2 0 3-2 2-4l-3-5c3-3 5-7 5-12 0-10-8-18-18-18z"/>
+      <circle cx="26" cy="24" r="2" fill="#0a0a0a"/>
+      <circle cx="38" cy="24" r="2" fill="#0a0a0a"/>
+      <path fill="#0a0a0a" d="M28 32h8c1 0 1 1 0 2-1 2-3 3-4 3s-3-1-4-3c-1-1-1-2 0-2z"/>
+    </symbol>
+    <symbol id="icon-cookie" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="24" fill="currentColor"/>
+      <circle cx="22" cy="24" r="3" fill="#0a0a0a"/>
+      <circle cx="40" cy="22" r="2.5" fill="#0a0a0a"/>
+      <circle cx="36" cy="36" r="3" fill="#0a0a0a"/>
+      <circle cx="24" cy="40" r="2" fill="#0a0a0a"/>
+      <circle cx="44" cy="38" r="2" fill="#0a0a0a"/>
+    </symbol>
+    <symbol id="icon-icecream" viewBox="0 0 64 64">
+      <path fill="currentColor" d="M32 6c-8 0-14 6-14 14 0 2 .3 4 1 6h26c.7-2 1-4 1-6 0-8-6-14-14-14z"/>
+      <path fill="currentColor" d="M19 28h26l-11 28c-.7 2-3 2-4 0L19 28z"/>
+      <circle cx="26" cy="18" r="3" fill="#0a0a0a" opacity=".3"/>
+      <circle cx="36" cy="16" r="3" fill="#0a0a0a" opacity=".3"/>
+    </symbol>
+    <symbol id="icon-slushie" viewBox="0 0 64 64">
+      <path fill="currentColor" d="M18 22h28l-3 32c-.2 2.3-2.2 4-4.5 4H25.5c-2.3 0-4.3-1.7-4.5-4l-3-32z"/>
+      <ellipse cx="32" cy="22" rx="14" ry="4" fill="currentColor" opacity=".7"/>
+      <path fill="#0a0a0a" opacity=".3" d="M20 28l2 20c.1 1 1 2 2 2h16c1 0 2-1 2-2l2-20H20z"/>
+      <rect x="30" y="6" width="4" height="18" rx="2" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-kids" viewBox="0 0 64 64">
+      <circle cx="32" cy="20" r="10" fill="currentColor"/>
+      <path fill="currentColor" d="M14 54c0-10 8-18 18-18s18 8 18 18v4H14v-4z"/>
+      <circle cx="28" cy="18" r="1.5" fill="#0a0a0a"/>
+      <circle cx="36" cy="18" r="1.5" fill="#0a0a0a"/>
+      <path fill="none" stroke="#0a0a0a" stroke-width="1.5" stroke-linecap="round" d="M28 24c2 2 6 2 8 0"/>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24">
+      <path d="M4 20c0-10 8-16 16-16 0 10-6 16-16 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M4 20c4-4 8-8 16-16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-alert" viewBox="0 0 24 24">
+      <path d="M12 3L2 20h20L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M12 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="12" cy="17" r="1" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24">
+      <circle cx="9" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="17" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M3 20c0-3 3-6 6-6s6 3 6 6M15 20c0-2 2-4 4-4s2 2 2 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-swap" viewBox="0 0 24 24">
+      <path d="M4 8h14l-3-3M20 16H6l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-tag" viewBox="0 0 24 24">
+      <path d="M20 12l-8 8-9-9V3h8l9 9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="8" cy="8" r="1.5" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 1.9.6 2.8a2 2 0 01-.5 2.1L7.9 10a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.8.6a2 2 0 011.7 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="dot"></span> PORKIES</a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navList').classList.toggle('open')">☰</button>
+      <ul id="navList">
+        <li><a class="link" href="index.html">Home</a></li>
+        <li><a class="link" href="cafe.html">The Cafe</a></li>
+        <li><a class="link active" href="catering.html">Catering</a></li>
+        <li><a class="link" href="index.html#menu">Menu</a></li>
+        <li><a class="link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="cat-logo">
+        <span class="bigname">PORKIES</span>
+        <span class="subname">~ catering ~</span>
+      </div>
+      <span class="handwritten">We'll bring the feed</span>
+      <h1>Catering That Feeds the Mob</h1>
+      <p>Weddings, birthdays, tradie lunches, engagements, end-of-season footy bashes. We roll up, cook on-site, and leave everyone sorted. One bloke, one truck, zero drama — minimum 50 heads.</p>
+      <a href="#menu" class="btn btn-primary">See the Menu</a>
+      <a href="#enquiry" class="btn btn-ghost">How to Book</a>
+    </div>
+  </header>
+
+  <!-- PROCESS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">Dead easy</span>
+        <h2>How it works</h2>
+        <p>Four steps from enquiry to everyone-going-back-for-seconds.</p>
+      </div>
+      <div class="steps" style="margin-top:40px;">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Tell us the guts</h3>
+          <p>Date, headcount, location. Quickest way is a phone call to Rob on <strong>0414 739 696</strong> or a DM to <strong>@porkiesmobilecatering</strong>.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Pick your feed</h3>
+          <p>Choose a burger tier, add starters, kids menu, and desserts. We'll suggest a balanced mix so service runs smooth.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Lock it in</h3>
+          <p>Small deposit holds the date. Balance on the day. All prices plus GST — travel fee may apply depending on location.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>We roll up</h3>
+          <p>Truck arrives early, sets up, cooks on-site, feeds your mob, cleans up and heads off. Easy as.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BURGER TIERS -->
+  <section id="menu" style="background:#0c0a0b;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">The main event</span>
+        <h2>Burger Menu</h2>
+        <p>Three tiers, pick what fits. Every burger comes with a side of fries. Prices are per guest, plus GST.</p>
+      </div>
+
+      <div class="cat-grid-3" style="margin-top:50px;">
+
+        <!-- $25 TIER -->
+        <div class="tier-card">
+          <div class="tier-head">
+            <div class="cat-icon"><svg><use href="#icon-burger"/></svg></div>
+            <div>
+              <h3>Crowd Pleasers</h3>
+              <div class="tier-price">$25<small>PER GUEST</small></div>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Pulled Pork</div>
+                <div class="desc">Pulled pork, slaw, pickle, onion, BBQ sauce</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Pulled Brisket</div>
+                <div class="desc">Pulled beef, slaw, pickle, onion, BBQ sauce</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Pulled Chicken</div>
+                <div class="desc">Chicken, slaw, pickle, onion, BBQ sauce</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Clunkin Mad</div>
+                <div class="desc">Fried chicken, bacon, slaw, American cheese, special sauce</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Sticky Chicken</div>
+                <div class="desc">Southern fried chicken, maple glaze, bacon, lettuce, American cheese, special sauce</div>
+              </div>
+            </div>
+          </div>
+          <p class="menu-note" style="margin-top:14px;">All burgers include a side of fries.</p>
+        </div>
+
+        <!-- $30 TIER -->
+        <div class="tier-card featured">
+          <div class="tier-head">
+            <div class="cat-icon"><svg><use href="#icon-burger"/></svg></div>
+            <div>
+              <h3>Step It Up</h3>
+              <div class="tier-price">$30<small>PER GUEST</small></div>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Americana</div>
+                <div class="desc">Beef patty, American cheese, pickle, onion, special sauce</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Hot Honey</div>
+                <div class="desc">Fried chicken, lettuce, American cheese, bacon, jalapeños, special sauce, hot honey</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Pineapple Express</div>
+                <div class="desc">Beef patty, American cheese, bacon, pineapple, lettuce, garlic aioli</div>
+              </div>
+            </div>
+          </div>
+          <p class="menu-note" style="margin-top:14px;">All burgers include a side of fries.</p>
+        </div>
+
+        <!-- $35 TIER -->
+        <div class="tier-card">
+          <div class="tier-head">
+            <div class="cat-icon"><svg><use href="#icon-burger"/></svg></div>
+            <div>
+              <h3>The Big Guns</h3>
+              <div class="tier-price">$35<small>PER GUEST</small></div>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Cowboy</div>
+                <div class="desc">Beef patty, lettuce, American cheese, onion rings, pickle, smokey BBQ sauce</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Tower of Power</div>
+                <div class="desc">Fried chicken, lettuce, American cheese, bacon, hash brown, chilli mayo</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Buffalo Babe</div>
+                <div class="desc">Grilled chicken breast, jalapeños, slaw, American cheese, bacon, ranch, hot sauce</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Mr Meaty</div>
+                <div class="desc">Beef patty, pulled pork, American cheese, onion, pickle, special sauce</div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Barnyard</div>
+                <div class="desc">Beef patty, bacon, southern fried chicken, American cheese, lettuce, pickles, onion, special sauce</div>
+              </div>
+            </div>
+          </div>
+          <p class="menu-note" style="margin-top:14px;">All burgers include a side of fries.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STARTERS + KIDS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">Add-ons</span>
+        <h2>Starters &amp; Kids</h2>
+        <p>Keep the peckish entertained while the grill fires up, and make sure the little ones don't starve.</p>
+      </div>
+
+      <div class="cat-grid-2" style="margin-top:40px;">
+
+        <!-- STARTERS -->
+        <div class="cat-block">
+          <div class="cat-block-head">
+            <div class="cat-icon"><svg><use href="#icon-chicken"/></svg></div>
+            <div>
+              <span class="handwritten">Grazing</span>
+              <h3>Starters</h3>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Chicken Tenders</div>
+                <div class="desc">3 per person</div>
+              </div>
+              <div class="price">$10pp</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Pork Belly Bites in Glaze</div>
+                <div class="desc">3 per person</div>
+              </div>
+              <div class="price">$10pp</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Chicken Wings</div>
+                <div class="desc">3 per person</div>
+              </div>
+              <div class="price">$10pp</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Dagwood Dogs</div>
+                <div class="desc">1 per person</div>
+              </div>
+              <div class="price">$8pp</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Loaded Fries Platter</div>
+                <div class="desc">Serves 6–8 people</div>
+              </div>
+              <div class="price">$60</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KIDS -->
+        <div class="cat-block">
+          <div class="cat-block-head">
+            <div class="cat-icon"><svg><use href="#icon-kids"/></svg></div>
+            <div>
+              <span class="handwritten">Little mob</span>
+              <h3>Kids Menu</h3>
+            </div>
+          </div>
+          <p style="color:#c9c0b8;margin:-8px 0 18px;">
+            <strong style="color:var(--pink-hot);font-family:'Bebas Neue',Impact,sans-serif;letter-spacing:1.5px;font-size:1.3rem;">$18pp</strong>
+            &nbsp;— up to 12 years old. Pick one from:
+          </p>
+          <div class="menu-list">
+            <div class="item"><div><div class="name">Cheeseburger &amp; Fries</div></div></div>
+            <div class="item"><div><div class="name">Nuggets &amp; Fries</div></div></div>
+            <div class="item"><div><div class="name">Fish Pieces &amp; Fries</div></div></div>
+            <div class="item"><div><div class="name">Chicken Tenders &amp; Fries</div></div></div>
+            <div class="item"><div><div class="name">Hot Dog &amp; Fries</div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DESSERTS -->
+  <section style="background:#0c0a0b;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">Finish strong</span>
+        <h2>Dessert Options</h2>
+        <p>Because a feed without something sweet at the end just isn't a feed.</p>
+      </div>
+
+      <div class="cat-grid-3" style="margin-top:40px;">
+
+        <!-- ICE CREAM -->
+        <div class="cat-block">
+          <div class="cat-block-head">
+            <div class="cat-icon"><svg><use href="#icon-icecream"/></svg></div>
+            <div>
+              <span class="handwritten">Cold &amp; sweet</span>
+              <h3>Ice Cream</h3>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Soft Serve</div>
+                <div class="desc">Sprinkles, Oreo, nuts</div>
+              </div>
+              <div class="price">$7pp</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Soft Serve Deluxe</div>
+                <div class="desc">All toppings, twirl, sundaes, waffle cones, double cones and choc tops</div>
+              </div>
+              <div class="price">$12pp</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COOKIES -->
+        <div class="cat-block">
+          <div class="cat-block-head">
+            <div class="cat-icon"><svg><use href="#icon-cookie"/></svg></div>
+            <div>
+              <span class="handwritten">Warm &amp; loaded</span>
+              <h3>NY Loaded Cookies</h3>
+            </div>
+          </div>
+          <p style="color:#c9c0b8;margin:-8px 0 18px;">
+            <strong style="color:var(--pink-hot);font-family:'Bebas Neue',Impact,sans-serif;letter-spacing:1.5px;font-size:1.3rem;">$6pp</strong>
+            &nbsp;— choose your flavour:
+          </p>
+          <div class="menu-list">
+            <div class="item"><div><div class="name">M&amp;M</div></div></div>
+            <div class="item"><div><div class="name">Biscoff</div></div></div>
+            <div class="item"><div><div class="name">Nutella</div></div></div>
+            <div class="item"><div><div class="name">Macadamia</div></div></div>
+            <div class="item"><div><div class="name">Red Velvet</div></div></div>
+            <div class="item"><div><div class="name">Chocolate Fudge</div></div></div>
+          </div>
+        </div>
+
+        <!-- SLUSHIES -->
+        <div class="cat-block">
+          <div class="cat-block-head">
+            <div class="cat-icon"><svg><use href="#icon-slushie"/></svg></div>
+            <div>
+              <span class="handwritten">Sip it slow</span>
+              <h3>Slushies</h3>
+            </div>
+          </div>
+          <div class="menu-list">
+            <div class="item">
+              <div>
+                <div class="name">Raspberry Slushie</div>
+              </div>
+              <div class="price">$5pp</div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="name">Slushie Delight</div>
+                <div class="desc">Topped with soft serve</div>
+              </div>
+              <div class="price">$9pp</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPORTANT INFORMATION -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">Read this bit</span>
+        <h2>Important Information</h2>
+        <p>A few quick things worth knowing before you book.</p>
+      </div>
+
+      <div class="info-grid" style="margin-top:40px;">
+
+        <div class="info-card">
+          <h4><svg><use href="#icon-users"/></svg> Minimum 50 Guests</h4>
+          <p>Our minimum booking requirement is <strong>50 people</strong>. On bigger jobs we offer an alternating menu so everyone gets something they love.</p>
+        </div>
+
+        <div class="info-card">
+          <h4><svg><use href="#icon-fries"/></svg> Burgers Include Fries</h4>
+          <p>Every burger on the menu comes with a side of fries, included in the per-guest price. No need to add extra.</p>
+        </div>
+
+        <div class="info-card">
+          <h4><svg><use href="#icon-clock"/></svg> Serving Times</h4>
+          <p>The more deep-fried items you choose, the longer serving times may be (the oil cools down with frequent use). For a balanced, efficient service, we recommend selecting one beef burger and one chicken burger.</p>
+        </div>
+
+        <div class="info-card">
+          <h4><svg><use href="#icon-swap"/></svg> Alternating Menus</h4>
+          <p>On bigger jobs we serve an alternating menu — half the guests get one burger, the other half a different one. Makes service quicker and gives everyone a peek at what their mate got.</p>
+        </div>
+
+        <div class="info-card">
+          <h4><svg><use href="#icon-tag"/></svg> Pricing &amp; Travel</h4>
+          <p>All prices are <strong>plus GST</strong>. A travel fee may apply depending on your location — we'll quote the lot up front so there are no surprises.</p>
+        </div>
+
+        <div class="info-card">
+          <h4><svg><use href="#icon-leaf"/></svg> Crowd Favourites</h4>
+          <p>Our most popular selections are the <strong>pulled beef brisket</strong>, <strong>pulled pork</strong> and the <strong>sticky chicken</strong> burgers. Can't go wrong with any of them.</p>
+        </div>
+
+        <div class="info-card">
+          <h4><svg><use href="#icon-alert"/></svg> Allergies &amp; Dietary</h4>
+          <p>Please let us know about any food allergies or dietary requirements when you book so we can plan accordingly.</p>
+        </div>
+
+        <div class="info-card">
+          <h4><svg><use href="#icon-leaf"/></svg> Vegetarian, GF &amp; Vegan</h4>
+          <p>We've got vegetarian, gluten-free and vegan options available. These need to be discussed directly with Rob so we can sort the right setup for your event.</p>
+        </div>
+
+        <div class="info-card">
+          <h4><svg><use href="#icon-phone"/></svg> Talk to Rob</h4>
+          <p>Questions, dietary needs, or just want a chat about your event? Ring Rob direct on <strong style="color:var(--pink-hot);">0414 739 696</strong>.</p>
+        </div>
+
+      </div>
+
+      <div class="phone-callout">
+        <h3>Thanks for considering Porkies to cater your event!</h3>
+        <p style="color:#c9c0b8;margin:0;">Questions? Ring Rob direct — happy to chat through menus, dietary needs, and whatever else.</p>
+        <a href="tel:0414739696" class="phone-big">0414 739 696</a>
+        <p style="margin:0;color:#aaa;">or DM us on Instagram <a href="https://instagram.com/porkiesmobilecatering" target="_blank" rel="noopener"><strong style="color:var(--pink-hot);">@porkiesmobilecatering</strong></a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET IN TOUCH -->
+  <section id="enquiry" style="background:#0c0a0b;">
+    <div class="wrap" style="max-width:760px;text-align:center;">
+      <div class="section-head">
+        <span class="handwritten">Let's lock it in</span>
+        <h2>Ready to book?</h2>
+        <p>Easiest way is a quick phone call. Rob'll chat through your event, confirm a date, and lock it in. Or slide into the DMs.</p>
+      </div>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:30px;">
+        <a href="tel:0414739696" class="btn btn-primary">📞 Ring Rob · 0414 739 696</a>
+        <a href="https://instagram.com/porkiesmobilecatering" target="_blank" rel="noopener" class="btn btn-ghost">📷 @porkiesmobilecatering</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="handwritten">Quick answers</span>
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq" style="max-width:760px;margin:40px auto 0;">
+        <details>
+          <summary>What's the minimum headcount?</summary>
+          <p>50 people. For smaller groups we can point you towards a few options or take bookings at the Porkies cafe instead.</p>
+        </details>
+        <details>
+          <summary>How far will you travel?</summary>
+          <p>We'll go a fair way for the right gig. Travel fees kick in outside our usual area — we'll be straight with you about cost up front.</p>
+        </details>
+        <details>
+          <summary>Do you cater dietary requirements?</summary>
+          <p>Yes — vegetarian, gluten-free, and vegan options are all available, but need to be discussed with Rob directly on <strong>0414 739 696</strong> so we can plan the right setup. All allergies and dietary requirements must be advised when you book.</p>
+        </details>
+        <details>
+          <summary>What does an "alternating menu" mean?</summary>
+          <p>On bigger jobs we serve an alternating menu — half the guests get one burger, the other half a different one. Speeds up service and gives everyone variety.</p>
+        </details>
+        <details>
+          <summary>Are prices per head final?</summary>
+          <p>Per-guest prices are plus GST. A travel fee may apply depending on location — we'll quote the full amount up front so there are no surprises.</p>
+        </details>
+        <details>
+          <summary>How do I lock in a date?</summary>
+          <p>Ring Rob on <strong>0414 739 696</strong> or DM <strong>@porkiesmobilecatering</strong> on Instagram. We'll chat through the menu, confirm availability, and lock it in with a small deposit.</p>
+        </details>
+        <details>
+          <summary>How long does set-up take?</summary>
+          <p>Rob rolls up about an hour before service starts to set up and fire the grills. Service itself is quick once we're rolling — especially if you follow our tip of picking one beef and one chicken burger.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#0a0a0a;padding:50px 0;border-top:1px solid var(--ink-line);">
+    <div class="wrap" style="text-align:center;">
+      <a href="index.html" class="brand" style="justify-content:center;"><span class="dot"></span> PORKIES</a>
+      <p style="color:#888;margin:20px 0 10px;">Family-owned Aussie tucker. Truck, catering &amp; cafe.</p>
+      <p style="color:#666;font-size:.9rem;margin:0 0 6px;">
+        Catering enquiries: <a href="tel:0414739696">0414 739 696</a> &middot;
+        <a href="https://instagram.com/porkiesmobilecatering" target="_blank" rel="noopener">@porkiesmobilecatering</a>
+      </p>
+      <p style="color:#666;font-size:.9rem;margin:0;">
+        Cafe: 448 Pacific Hwy, Crows Nest NSW 2065 &middot;
+        <a href="https://instagram.com/porkiescrowsnest" target="_blank" rel="noopener">@porkiescrowsnest</a>
+      </p>
+      <p style="color:#555;font-size:.8rem;margin-top:20px;">&copy; <span id="yr"></span> Porkies. Made with elbow grease.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
